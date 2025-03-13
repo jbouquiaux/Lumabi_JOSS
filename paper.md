@@ -40,6 +40,11 @@ aas-journal: Astrophysical Journal <- The name of the AAS journal.
 
 # Summary
 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.99\linewidth]{Lumabi_logo.pdf}
+\end{figure}
+
 Lumabi is a Python package integrated within the Abipy framework [@gonze2020abinit] designed to automate and streamline the computation of phonon-resolved luminescence spectra of defects in inorganic solids using the ABINIT density functional theory software [@gonze2002first;@gonze2009abinit;@gonze2016recent;@gonze2020abinit]. The package addresses the growing need for efficient, reproducible workflows in materials science [@lejaeghere2016reproducibility;@bosoni2024verify], particularly in the study of defect-related luminescent properties, which are critical for applications ranging from quantum technologies [@wolfowicz2021quantum;@dreyer2018first] to down-conversion phosphors materials used in white light LEDs [@pust2015revolution;@lin2017inorganic;@fang2022evolutionary]. Lumabi automates key steps in the computational workflow, from initial $\Delta$SCF DFT calculations with constrained occupations, to the generation of defect phonons mode in large supercells, right through the final generation of luminescence spectra based on the Huang-Rhys theory [@huang1950theory,@jin2021photoluminescence]. Tutorials and examples, written in the form of Jupyter books, can be found at this link : \url{https://jbouquiaux.github.io/lumi_book/intro.html}.
 
 
@@ -60,6 +65,13 @@ The code is structured around four main Python modules, each handling a differen
 ![The LumiWork module, an AbiPy Workflow that automates ABINIT DFT tasks with $\Delta$SCF constrained occupations.\label{fig:LumiWork}](LumiWork.pdf)
 
 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.99\linewidth]{LumiWork.pdf}
+	\caption[$\Delta$SCF module]{The $\Delta$SCF module, designed to post-process $\Delta$SCF constrained occupations calculations using a one-dimensional configuration coordinate model.}
+	\label{fig:Delta_SCF_post_process}
+\end{figure}
+
 
 A computational workflow to compute phonon resolved PL spectra of defect system typically begins with the LumiWork module (see figure \ref{fig:LumiWork}), which automates ABINIT DFT tasks with $\Delta$SCF constrained occupations \cite{jones1989density,hellman2004potential}. Users input the defect supercell structure (e.g. a cif file), DFT parameters (e.g., plane-wave cut-off, stopping SCF criterion,...), and constrained occupations of the Kohn-Sham states that aim at mimicking the excited state of the system under study. This module manages two structure relaxations, for both the ground and excited states and offers optional single-shot static SCF and non-SCF band structure calculations. Note that the workflow is dynamic : the relaxed excited state is not known in advance, which requires the creation of inputs at run-time. 
 
@@ -69,7 +81,7 @@ The \texttt{LumiWork} class inherits from the \texttt{Work} Abipy class. Hence, 
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.99\linewidth]{figures/Chapter4/2.pdf}
+	\includegraphics[width=0.99\linewidth]{dSCF_post_process.pdf}
 	\caption[$\Delta$SCF module]{The $\Delta$SCF module, designed to post-process $\Delta$SCF constrained occupations calculations using a one-dimensional configuration coordinate model.}
 	\label{fig:Delta_SCF_post_process}
 \end{figure}
@@ -81,7 +93,7 @@ In the case of experimental lineshapes with resolved phonon peaks, it is importa
 The Interatomic Force Constants (IFCs) Embedding module has the role to calculate defect phonons in large supercells at the $\mathbf{q}=(0,0,0)$ ($\Gamma$ point) wave vector. This module addresses the computational challenges associated with capturing both the coupling with long-wavelength phonons and the localized phonon modes introduced by defects. Direct methods, such as Density Functional Perturbation Theory (DFPT) \cite{gonze1997dynamical} and finite difference approaches \cite{togo2015first}, are impractical for large supercells due to their high computational costs. First employed in the context of the luminescence of the NV center by Alkauskas et al. \cite{alkauskas2014}, it has been then used in various other systems~\cite{jin2021photoluminescence, bouquiaux2023first, razinkovas2021vibrational, maciaszek2023application, jin2022vibrationally}. The procedure relies on the short-range nature of interatomic forces to build IFCs matrices for defect supercells containing thousands of atoms, targeting the dilute limit. 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.99\linewidth]{figures/Chapter4/3.pdf}
+	\includegraphics[width=0.99\linewidth]{IFCs_embedding.pdf}
 	\caption[IFCs embedding module]{The IFCs embedding module, allowing to calculate defect phonons in large supercells.}
 	\label{fig:IFCs_emb}
 \end{figure}
@@ -100,7 +112,7 @@ The code expects as inputs the zero-phonon line energy, the atomic displacements
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.99\linewidth]{figures/Chapter4/4.pdf}
+	\includegraphics[width=0.99\linewidth]{lineshape.pdf}
 	\caption[lineshape module]{The lineshape module, allowing to compute the temperature-dependent spectra.}
 	\label{fig:lineshape_module}
 \end{figure}
