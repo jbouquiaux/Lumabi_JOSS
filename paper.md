@@ -96,11 +96,12 @@ The code expects as inputs the zero-phonon line energy, the atomic displacements
 
 # Examples and Applications
 
-This computational workflow has been used mostly for inorganic phosphors activated with Eu$^{2+}$ defects [@bouquiaux2021importance;@bouquiaux2023first], but it has been tested for other systems such as the F-center (oxygen vacancy) in CaO or the NV center in diamond, and it is able to deal in principle with any kind of point defect.
-Examples of use can be found in the example sections of the [online tutorial](https://jbouquiaux.github.io/lumi_book/intro.html). The results presented in this work were obtained with this tool, and the reader is referred to the different result sections for examples of applications.
+This computational workflow has been widely used for inorganic phosphors activated with Eu$^{2+}$ defects and has also been tested on a variety of other systems, such as the F-center (oxygen vacancy) in CaO and the NV center in diamond. Its versatility allows it to be applied, in principle, to any kind of point defect.
+These developments have been particularly usefull in understanding the luminescence properties of technologically significant red-emitting Eu-doped phosphor materials. Notably, the workflow has been applied to SrAl$_2$Li$_2$O$_2$N$_2$:Eu$^{2+}$ and SrAlLi$_3$N$_4$:Eu$^{2+}$, shedding new light on their phonon sideband [@bouquiaux2021importance,@bouquiaux2023first]. We refer the reader to the accompanying notebook tutorials for practical examples demonstrating the application of this workflow.
+
 
 # Acknowledgements
 
-TODO
+TO FILL 
 
 # References
