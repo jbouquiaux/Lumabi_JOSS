@@ -14,7 +14,6 @@ authors:
     affiliation: 1
   - name: Matteo Giantomassi
     orcid: 0000-0002-7007-9813
-    corresponding: true
     affiliation: 1
   - name: Samuel Poncé
     orcid: 0000-0003-1159-8389
