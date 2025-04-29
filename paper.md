@@ -17,13 +17,13 @@ authors:
     affiliation: 1
   - name: Samuel Poncé
     orcid: 0000-0003-1159-8389
-    affiliation: 1
+    affiliation: 1,2
   - name: Yongchao Jia
     orcid: 0000-0002-7319-9546
-    affiliation: 2
+    affiliation: 3
   - name: Masayoshi Mikami
     orcid: 0000-0002-5598-4882
-    affiliation: 3
+    affiliation: 4
   - name: Xavier Gonze
     orcid: 0000-0002-8377-6829
     affiliation: 1
@@ -31,10 +31,12 @@ authors:
 affiliations:
  - name:  Institute of Condensed Matter and Nanosciences, Université catholique de Louvain, B-1348 Louvain-la-Neuve, Belgium
    index: 1
- - name: Yanshan University, Hebei Key Laboratory of Applied Chemistry, Yanshan University, 066004 Qinhuangdao, P. R. China
+ - name:  WEL Research Institute, avenue Pasteur 6, 1300 Wavre, Belgium.
    index: 2
- - name: Materials Design Laboratory, Science & Innovation Center, Mitsubishi Chemical Corporation, Yokohama 227-8502, Japan
+ - name: Yanshan University, Hebei Key Laboratory of Applied Chemistry, Yanshan University, 066004 Qinhuangdao, P. R. China
    index: 3
+ - name: Materials Design Laboratory, Science & Innovation Center, Mitsubishi Chemical Corporation, Yokohama 227-8502, Japan
+   index: 4
 
 date: 22 April 2025
 bibliography: paper.bib
