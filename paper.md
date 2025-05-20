@@ -11,7 +11,7 @@ authors:
   - name: Julien Bouquiaux
     orcid: 0000-0003-1982-052X
     corresponding: true
-    affiliation: 1
+    affiliation: 1,5
   - name: Matteo Giantomassi
     orcid: 0000-0002-7007-9813
     affiliation: 1
@@ -37,6 +37,8 @@ affiliations:
    index: 3
  - name: Materials Design Laboratory, Science & Innovation Center, Mitsubishi Chemical Corporation, Yokohama 227-8502, Japan
    index: 4
+ - name: Matgenix, A6K Advanced Engineering Centre, Charleroi, Belgium.
+   index: 5
 
 date: 22 April 2025
 bibliography: paper.bib
