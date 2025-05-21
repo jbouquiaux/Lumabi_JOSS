@@ -35,7 +35,7 @@ affiliations:
    index: 2
  - name: Yanshan University, Hebei Key Laboratory of Applied Chemistry, Yanshan University, 066004 Qinhuangdao, P. R. China
    index: 3
- - name: Materials Design Laboratory, Science & Innovation Center, Mitsubishi Chemical Corporation, Yokohama 227-8502, Japan
+ - name: Science & Innovation Center, Mitsubishi Chemical Corporation, Yokohama 227-8502, Japan
    index: 4
  - name: Matgenix, A6K Advanced Engineering Centre, Charleroi, Belgium.
    index: 5
@@ -53,7 +53,7 @@ Lumabi is a Python package integrated within the Abipy framework [@gonze2020abin
 
 # Statement of need
 
-The study of defect-induced luminescence in materials is crucial for understanding and designing materials with specific optical properties. However, the computational workflow required to accurately predict these properties is complex and involves ground-state calculations, phonon computations, pre- and post-processing.
+The study of defect-induced luminescence in materials is crucial for understanding and designing materials with specific optical properties. However, the computational workflow required to accurately predict these properties is complex and involves ground and excited-state calculations, phonon computations, pre- and post-processing.
 
 Therefore, a number of software packages have been developed to manage the pre- or post-processing of defect calculations [@naik2018coffee;@pean2017presentation;@goyal2017computational;@broberg2018pycdt;@kumagai2021insights;@neilson2022defap;@arrigoni2021spinney;@shen2024pymatgen]. The few that focus on luminescent properties [@Kavanagh2024;@turiansky2021nonrad;@cavignac2024] are all interfaced with the commercial software VASP [@kresse1996efficiency], and only provide the post-processing part of DFT computations following the formalism proposed by Alkauskas et al. [@alkauskas2014]. To our knowledge, the generation of defect phonon modes in large supercells following an embedding of the interatomic force constants is currently not available.
 
