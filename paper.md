@@ -11,7 +11,7 @@ authors:
   - name: Julien Bouquiaux
     orcid: 0000-0003-1982-052X
     corresponding: true
-    affiliation: 1
+    affiliation: 1,5
   - name: Matteo Giantomassi
     orcid: 0000-0002-7007-9813
     affiliation: 1
@@ -35,8 +35,10 @@ affiliations:
    index: 2
  - name: Yanshan University, Hebei Key Laboratory of Applied Chemistry, Yanshan University, 066004 Qinhuangdao, P. R. China
    index: 3
- - name: Materials Design Laboratory, Science & Innovation Center, Mitsubishi Chemical Corporation, Yokohama 227-8502, Japan
+ - name: Science & Innovation Center, Mitsubishi Chemical Corporation, Yokohama 227-8502, Japan
    index: 4
+ - name: Matgenix, A6K Advanced Engineering Centre, Charleroi, Belgium.
+   index: 5
 
 date: 22 April 2025
 bibliography: paper.bib
@@ -47,11 +49,11 @@ bibliography: paper.bib
 
 ![Lumabi logo](Lumabi_logo.pdf){width=50%}
 
-Lumabi is a Python package integrated within the Abipy framework [@gonze2020abinit] designed to automate and streamline the computation of phonon-resolved luminescence spectra of defects in inorganic solids using the ABINIT first-principles software application [@gonze2002first;@gonze2009abinit;@gonze2016recent;@gonze2020abinit]. The package addresses the growing need for efficient, reproducible workflows in materials science [@lejaeghere2016reproducibility;@bosoni2024verify], particularly in the study of defect-related luminescent properties, which are critical for applications ranging from quantum technologies [@wolfowicz2021quantum;@dreyer2018first] to down-conversion phosphors materials used in white light LEDs [@pust2015revolution;@lin2017inorganic;@fang2022evolutionary]. Lumabi automates key steps in the computational workflow, from initial $\Delta$SCF density-functional theory calculations with constrained occupations, to the generation of defect phonons mode in large supercells, right through the final generation of luminescence spectra based on the Huang-Rhys theory [@huang1950theory;@jin2021photoluminescence]. Tutorials and examples, written in the form of Jupyter books, can be found at [https://jbouquiaux.github.io/lumi_book/intro.html](https://jbouquiaux.github.io/lumi_book/intro.html).
+Lumabi is a Python package integrated within the Abipy framework [@gonze2020abinit] designed to automate and streamline the computation of phonon-resolved luminescence spectra of defects in inorganic solids using the ABINIT first-principles software application [@gonze2002first;@gonze2009abinit;@gonze2016recent;@gonze2020abinit]. The package addresses the growing need for efficient, reproducible workflows in materials science [@lejaeghere2016reproducibility;@bosoni2024verify], particularly in the study of defect-related luminescent properties, which are critical for applications ranging from quantum technologies [@wolfowicz2021quantum;@dreyer2018first] to down-conversion phosphors materials used in white light LEDs [@pust2015revolution;@lin2017inorganic;@fang2022evolutionary]. Lumabi automates key steps in the computational workflow, from initial $\Delta$SCF density-functional theory calculations with constrained occupations, to the generation of defect phonons mode in large supercells, right through the final generation of luminescence spectra based on the Huang-Rhys theory [@huang1950theory;@jin2021photoluminescence]. Tutorials and examples, written in the form of Jupyter books, can be found at [https://abinit.github.io/abipy_book/intro.html](https://abinit.github.io/abipy_book/intro.html).
 
 # Statement of need
 
-The study of defect-induced luminescence in materials is crucial for understanding and designing materials with specific optical properties. However, the computational workflow required to accurately predict these properties is complex and involves ground-state calculations, phonon computations, pre- and post-processing.
+The study of defect-induced luminescence in materials is crucial for understanding and designing materials with specific optical properties. However, the computational workflow required to accurately predict these properties is complex and involves ground and excited-state calculations, phonon computations, pre- and post-processing.
 
 Therefore, a number of software packages have been developed to manage the pre- or post-processing of defect calculations [@naik2018coffee;@pean2017presentation;@goyal2017computational;@broberg2018pycdt;@kumagai2021insights;@neilson2022defap;@arrigoni2021spinney;@shen2024pymatgen]. The few that focus on luminescent properties [@Kavanagh2024;@turiansky2021nonrad;@cavignac2024] are all interfaced with the commercial software VASP [@kresse1996efficiency], and only provide the post-processing part of DFT computations following the formalism proposed by Alkauskas et al. [@alkauskas2014]. To our knowledge, the generation of defect phonon modes in large supercells following an embedding of the interatomic force constants is currently not available.
 
