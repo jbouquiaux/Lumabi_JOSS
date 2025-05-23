@@ -68,7 +68,7 @@ Moreover, the systematic generation of well-structured data through this automat
 
 The code is structured around four Python modules, each handling a different stage of the computational workflow.
 Although these modules are designed to work seamlessly together --where the output of one serves as the input to the next--
-each individual building block can be also used independently with ease. In this article, we describe here the overall working principles of each block. For a more practical approach, we provide [online tutorials](https://jbouquiaux.github.io/lumi_book/intro.html) for the different modules.
+each individual building block can be also used independently with ease. In this article, we describe here the overall working principles of each block. For a more practical approach, we provide [online tutorials](https://abinit.github.io/abipy_book/intro.html) for the different modules.
 
 ## LumiWork Module
 
