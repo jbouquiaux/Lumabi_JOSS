@@ -51,7 +51,7 @@ bibliography: paper.bib
 
 Lumabi is a Python package integrated within the AbiPy framework [@gonze2020abinit] designed to automate and streamline the computation of phonon-resolved luminescence spectra of point defects (including the case of dopants) in inorganic solids using the ABINIT first-principles software application [@gonze2002first;@gonze2009abinit;@gonze2016recent;@gonze2020abinit]. The package addresses the growing need for efficient, reproducible workflows in materials science [@lejaeghere2016reproducibility;@bosoni2024verify], particularly in the study of defect-related luminescent properties, which are critical for applications ranging from quantum technologies [@wolfowicz2021quantum;@dreyer2018first] to down-conversion phosphors materials used in white light LEDs [@pust2015revolution;@lin2017inorganic;@fang2022evolutionary]. Lumabi automates key steps in the computational workflow, from initial $\Delta$SCF density-functional theory calculations with constrained occupations, to the generation of defect phonon modes in large supercells, right through the final generation of luminescence spectra based on the Huang-Rhys theory [@huang1950theory;@jin2021photoluminescence].
 A collection of tutorials and examples, organized as Jupyter Books,
-is available on the [Abipy Book project webpage](https://abinit.github.io/abipy_book/intro.html).
+is available on the [Abipy Book project webpage](https://abinit.github.io/abipy_book/lumabi/intro/intro.html).
 
 # Statement of need
 
