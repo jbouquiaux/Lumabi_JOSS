@@ -1,5 +1,5 @@
 ---
-title: 'Lumabi: a Python package to streamline the computation of phonon-resolved luminescence spectra of defects in solids'
+title: 'Lumabi: a Python package to streamline the computation of phonon-resolved luminescence spectra of defects and dopants in solids'
 tags:
   - Python
   - materials science
@@ -49,7 +49,7 @@ bibliography: paper.bib
 
 ![Lumabi logo](Lumabi_logo.pdf){width=50%}
 
-Lumabi is a Python package integrated within the AbiPy framework [@gonze2020abinit] designed to automate and streamline the computation of phonon-resolved luminescence spectra of defects in inorganic solids using the ABINIT first-principles software application [@gonze2002first;@gonze2009abinit;@gonze2016recent;@gonze2020abinit]. The package addresses the growing need for efficient, reproducible workflows in materials science [@lejaeghere2016reproducibility;@bosoni2024verify], particularly in the study of defect-related luminescent properties, which are critical for applications ranging from quantum technologies [@wolfowicz2021quantum;@dreyer2018first] to down-conversion phosphors materials used in white light LEDs [@pust2015revolution;@lin2017inorganic;@fang2022evolutionary]. Lumabi automates key steps in the computational workflow, from initial $\Delta$SCF density-functional theory calculations with constrained occupations, to the generation of defect phonon modes in large supercells, right through the final generation of luminescence spectra based on the Huang-Rhys theory [@huang1950theory;@jin2021photoluminescence].
+Lumabi is a Python package integrated within the AbiPy framework [@gonze2020abinit] designed to automate and streamline the computation of phonon-resolved luminescence spectra of point defects (including the case of dopants) in inorganic solids using the ABINIT first-principles software application [@gonze2002first;@gonze2009abinit;@gonze2016recent;@gonze2020abinit]. The package addresses the growing need for efficient, reproducible workflows in materials science [@lejaeghere2016reproducibility;@bosoni2024verify], particularly in the study of defect-related luminescent properties, which are critical for applications ranging from quantum technologies [@wolfowicz2021quantum;@dreyer2018first] to down-conversion phosphors materials used in white light LEDs [@pust2015revolution;@lin2017inorganic;@fang2022evolutionary]. Lumabi automates key steps in the computational workflow, from initial $\Delta$SCF density-functional theory calculations with constrained occupations, to the generation of defect phonon modes in large supercells, right through the final generation of luminescence spectra based on the Huang-Rhys theory [@huang1950theory;@jin2021photoluminescence].
 A collection of tutorials and examples, organized as Jupyter Books,
 is available on the [Abipy Book project webpage](https://abinit.github.io/abipy_book/intro.html).
 
@@ -125,8 +125,8 @@ The code takes as input the zero-phonon line energy, the atomic displacements $\
 
 # Examples and Applications
 
-This computational workflow has been used for inorganic phosphors activated with Eu$^{2+}$ defects and has also been tested on a variety of other systems including  F-centers (oxygen vacancy) in CaO and the NV center in diamond. Its versatility allows for any kind of point defect.
-These developments have been particularly useful in understanding the luminescence properties of technologically significant red-emitting Eu-doped phosphor materials. Notably, the workflow has been applied to SrAl$_2$Li$_2$O$_2$N$_2$:Eu$^{2+}$ and SrAlLi$_3$N$_4$:Eu$^{2+}$, shedding new light on their phonon sideband [@bouquiaux2021importance;@bouquiaux2023first]. We refer the reader to the accompanying notebook tutorials for practical examples demonstrating the application of this workflow.
+This computational workflow has been used for inorganic phosphors activated with Eu$^{2+}$ dopants and has also been tested on a variety of other systems including  F-centers (oxygen vacancy) in CaO and the NV center in diamond. Its versatility allows for any kind of point defect.
+These developments have been particularly useful in understanding the luminescence properties of technologically significant red-emitting Eu-doped phosphor materials. Notably, the workflow has been applied to SrAl$_2$Li$_2$O$_2$N$_2$:Eu$^{2+}$ and SrLiAl$_3$N$_4$:Eu$^{2+}$, shedding new light on their phonon sideband [@bouquiaux2021importance;@bouquiaux2023first]. We refer the reader to the accompanying notebook tutorials for practical examples demonstrating the application of this workflow.
 
 
 # Acknowledgements
